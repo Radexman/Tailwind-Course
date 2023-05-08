@@ -6,8 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					fontFamily: {
+						sans: ['ui-sans-serif', 'system-ui'],
+						serif: ['Tapestry', 'Georgia'],
+						mono: ['ui-monospace', 'SFMono-Regular'],
+					},
+				},
+			};
+		</script>
 		<title>Typography</title>
 	</head>
 	<body>
@@ -41,18 +55,20 @@
 		<div class="text-left">Tailwind is awesome</div>
 		<div class="text-center">Tailwind is awesome</div>
 		<div class="text-right">Tailwind is awesome</div>
+		<div class="text-justify">Tailwind is awesome</div>
 
 		<!-- Text Decoration -->
-		<div class="underline decoration-4 decoration-blue-400">Tailwind is awesome</div>
-
-		<!-- Decoration Style -->
-		<div class="underline decoration-dotted">Tailwind is awesome</div>
+		<div class="underline decoration-4">Tailwind is awesome</div>
+		<div class="underline decoration-double">Tailwind is awesome</div>
+		<div class="underline decoration-dottet">Tailwind is awesome</div>
 		<div class="underline decoration-dashed">Tailwind is awesome</div>
 		<div class="underline decoration-wavy">Tailwind is awesome</div>
-		<div class="underline decoration-double">Tailwind is awesome</div>
+
+		<div class="underline decoration-wavy decoration-zinc-700 underline-offset-2">Tailwind is awesome</div>
+
+		<!-- Decoration Style -->
 
 		<!-- Decoration Offset -->
-		<div class="underline decoration-4 decoration-blue-400 underline-offset-4">Tailwind is awesome</div>
 
 		<!-- Text Transform -->
 		<p class="normal-case">Tailwind is awesome</p>
