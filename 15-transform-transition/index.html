@@ -11,7 +11,7 @@
 				theme: {
 					extend: {
 						transitionDuration: {
-							2000: '10000ms',
+							2000: '5000ms',
 						},
 					},
 				},
@@ -20,16 +20,18 @@
 	</head>
 	<body>
 		<!-- No Transition -->
-		<button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700">Click me</button>
+		<button class="px-6 py-2 bg-blue-500 text-white rounded-md m-24 hover:bg-blue-700">Click me</button>
 
 		<!-- Transition -->
-		<button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:opacity-20 transition-all duration-250">Click me</button>
+		<button class="px-6 py-2 bg-blue-500 text-white rounded-md m-24 hover:bg-blue-700 hover:opacity-20 transition duration-1000">Click me</button>
 
 		<!-- Transition & Transform -->
-		<button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:rotate-12 duration-1000">Click me</button>
+		<button class="px-6 py-2 m-24 bg-orange-500 rounded-md text-slate-100 hover:scale-105 transition-transform duration-300 ease-in">
+			Click me
+		</button>
 
 		<!-- Transform & Transition -->
-		<img src="../assets/img/img1.jpg" alt="" class="w-48 hover:rotate-180 hover:scale-75 hover:skew-x-12 duration-2000" />
+		<img class="w-48 hover:rotate-180 hover:scale-75 hover:skew-x-12 transition duration-2000" src="../assets/img/img1.jpg" alt="" />
 	</body>
 </html>
 
