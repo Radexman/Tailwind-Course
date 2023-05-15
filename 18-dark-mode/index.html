@@ -5,32 +5,28 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/6033bf0207.js" crossorigin="anonymous"></script>
 		<script>
-			tailwind.config = {
+			taillwind.config = {
 				darkMode: 'class',
 			};
 		</script>
 		<style>
 			.toggle-checkbox:checked {
 				right: 0;
-				border-color: #68d391;
-			}
-
-			.toggle-checkbox:checked + .toggle-label {
-				background: #68d391;
+				border-color: #14793a;
 			}
 		</style>
 		<title>Dark Mode</title>
 	</head>
 	<body>
-		<div class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow-xl">
-			<h3 class="text-slate-900 dark:text-white font-mediuum tracking-tight">Lorem ipsum dolor sit.</h3>
-			<p class="text-slate-900 dark:text-slate-400 mt-2 text-sm">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint magni facilis reprehenderit aut totam odio officia deleniti tempora
-				labore, illo debitis optio soluta atque eaque.
+		<div class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow-lg shadow-slate-900/80">
+			<h3 class="text-slate-900 dark:text-white font-medium tracking-tight">Lorem ipsum dolor sit.</h3>
+			<p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae porro deleniti impedit voluptas sapiente quae quod, doloribus
+				esse neque eligendi tempora excepturi! Alias, mollitia facere?
 			</p>
 		</div>
-
 		<div class="relative inline-block w-12 mr-2 ml-6 mt-6 align-middle select-none transition duration-200 ease-in">
 			<input
 				type="checkbox"
@@ -41,7 +37,7 @@
 			<label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
 		</div>
 		<script>
-			document.getElementById('toggle').addEventListener('click', () => {
+			document.getElementById('toggle').addEventListener('change', () => {
 				if (this.checked) {
 					document.documentElement.classList.add('dark');
 				} else {
